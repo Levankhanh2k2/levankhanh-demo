@@ -641,4 +641,10 @@ footer p a {
     display: none; /* Ẩn khi chưa cuộn xuống */
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
   }
-  
+  .Hinh{
+    margin: 0% 0% 0% 18%;
+  }
+  .Hinh1{
+    margin: 0% 0% 0% 5%;
+  }
+
