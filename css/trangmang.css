@@ -126,5 +126,26 @@ button:hover {
 }
 /* ////////////////////////////////// */
 .TTLH{
-    margin: 0% 0% 0% 15%;
+    margin: 0% 0% 0% 10%;
 }
+/* Hình Ảnh  */
+/* .BangGia{
+    margin: 0% 0% 0% 6%;
+}
+  */
+  .BangGia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px; /* Khoảng cách giữa các hình ảnh */
+    padding: 16px; /* Khoảng cách bên trong */
+  }
+  
+  .BangGia img {
+    max-width: 100%; /* Hình ảnh co giãn để phù hợp kích thước màn hình */
+    height: auto; /* Giữ nguyên tỷ lệ hình ảnh */
+    border: 1px solid #ddd; /* Tùy chọn: Đường viền nhẹ cho hình ảnh */
+    border-radius: 8px; /* Tùy chọn: Bo góc */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tùy chọn: Đổ bóng */
+  }
+  

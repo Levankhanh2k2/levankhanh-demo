@@ -7,7 +7,7 @@ margin: 0% 0% 0% 10%;
 .ND{
      margin: 0% 0% 0% 2%;
 }
-.btn {
+.btn1 {
     background-color: #ff5722;
     color: #ffffff;
     border: none;
@@ -19,12 +19,14 @@ margin: 0% 0% 0% 10%;
     outline: none;
     animation: blink 1s infinite;
     transition: transform 0.2s;
-    margin: 0% 0% 0% 40%;
-   
+    margin: 20px auto; /* Căn giữa nút */
+    display: block; /* Đảm bảo nút là khối độc lập */
+    text-align: center;
+    max-width: 200px; /* Giới hạn chiều rộng */
 }
 
-.btn:hover {
-    transform: scale(1.1);
+.btn1:hover {
+    transform: scale(1.1); /* Phóng to khi hover */
 }
 
 @keyframes blink {
@@ -33,5 +35,22 @@ margin: 0% 0% 0% 10%;
     }
     50% {
         background-color: #4caf50;
+    }
+}
+
+/* Media queries để nút responsive */
+@media (max-width: 768px) {
+    .btn1 {
+        padding: 12px 24px; /* Giảm padding */
+        font-size: 16px; /* Giảm kích thước chữ */
+        max-width: 180px; /* Giới hạn chiều rộng nhỏ hơn */
+    }
+}
+
+@media (max-width: 480px) {
+    .btn1 {
+        padding: 10px 20px; /* Giảm padding hơn nữa */
+        font-size: 14px; /* Giảm kích thước chữ nhỏ hơn */
+        max-width: 150px; /* Giới hạn chiều rộng nhỏ */
     }
 }
